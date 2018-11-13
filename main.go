@@ -17,7 +17,7 @@
 package main
 
 import (
-	"encoding/json"
+	encoding/json"
 	"flag"
 	"fmt"
 	"html/template"
