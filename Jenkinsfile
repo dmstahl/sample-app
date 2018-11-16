@@ -56,7 +56,8 @@ spec:
         }
       }
     }
-    stage('Deploy Canary') {
+/*
+     stage('Deploy Canary') {
       // Canary branch
       when { branch 'canary' }
       steps {
@@ -102,5 +103,6 @@ spec:
         }
       }     
     }
+  */
   }
 }
