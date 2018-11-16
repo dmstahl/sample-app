@@ -119,6 +119,7 @@ func frontendMode(port int, backendURL string) {
 			fmt.Fprintf(w, "Error: %s\n", err.Error())
 			return
 		}
+                w.Header().Set("Content-Type", "application/json")
 		tpl.Execute(w, i)
 	})
 
